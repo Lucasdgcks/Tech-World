@@ -172,7 +172,7 @@ const Smartphone = () => {
       <div className="smartphone-container">
         {smartphones.map((phone) => (
           <div key={phone.id} className="smartphone-card">
-            <img src={phone.imagem} alt={phone.nome} />
+            <img src="" alt={phone.nome} />
             <h2>{phone.nome}</h2>
             <p>{phone.descricao}</p>
             <span>{phone.preco}</span>
