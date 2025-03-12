@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
@@ -11,9 +11,9 @@ import Smartphone from "./Pages/Smartphone";
 
 function App() {
   return (
-    <>
+    <Router basename="/Tech-World"> {/* Adicione o basename aqui */}
       <Navbar />
-      <div className="main-content"> {/* Adicione esta div */}
+      <div className="main-content">
         <Routes>
           <Route path="/" element={
             <>
@@ -28,8 +28,7 @@ function App() {
           <Route path="/smartphone" element={<Smartphone />} />
         </Routes>
       </div>
-      
-    </>
+    </Router>
   );
 }
 
