@@ -1,0 +1,68 @@
+.artigo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Garante que ocupe a largura toda */
+    max-width: 1200px; /* Define um limite para evitar que fique muito grande */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Fundo leve para destacar o conteúdo */
+    gap: 40px; /* Espaçamento entre o texto e a imagem */
+  }
+  #icon-foguete{
+    width: 50px;
+    transform: translate(0, 20px);
+  }
+  .artigo-texto {
+    max-width: 600px;
+    text-align: left;
+    color: #333;
+  }
+  
+  .artigo-texto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .artigo-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .destaque {
+    font-weight: bold;
+    color: #f8b400;
+  }
+  
+  .artigo img {
+    width: 500px; /* Largura fixa */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Responsivo para telas menores */
+  @media (max-width: 900px) {
+    .artigo {
+      flex-direction: column;
+      text-align: center;
+      max-width: 100%; /* Garante que não passe da tela */
+      overflow: hidden;
+    }
+  
+    .artigo img {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 400px;
+    }
+    
+    .artigo-texto {
+      max-width: 100%;
+    }
+
+    #icon-foguete{
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,135 @@
+/* Banner com vídeo de fundo */
+.banner {
+    margin-top: 40px;
+    width: 100%;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+}
+
+/* Vídeo de fundo */
+.banner-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Faz o vídeo preencher a tela corretamente */
+    z-index: -1; /* Mantém o vídeo no fundo */
+}
+
+/* Conteúdo do banner */
+.banner-content {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Fundo escuro para melhorar legibilidade */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Título */
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+/* Texto */
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: slideInFromRight 1.2s ease-out;
+}
+
+/* Botão de chamada para ação */
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 1px 2px 2px rgb(0, 0, 8);
+    background-color: #0573ad;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #001d5a;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner p {
+        font-size: 1.3rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 12px 26px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+        padding: 20px;
+        align-items: flex-start;
+
+    }
+
+    .banner-content {
+        max-width: 90%;
+        background: rgba(0, 0, 0, 0.8); /* Mais escuro para melhor contraste */
+        padding: 15px;
+        transform: translate(0, 150px);
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .banner-content {
+        padding: 10px;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

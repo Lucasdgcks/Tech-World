@@ -1,0 +1,65 @@
+.suporte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    gap: 40px;
+    flex-direction: row-reverse; /* Inverte a posição padrão */
+  }
+  
+  .suporte-texto {
+    max-width: 600px;
+    text-align: left;
+    color: #333;
+  }
+  
+  .suporte-texto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .suporte-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .destaque {
+    font-weight: bold;
+    color: #f8b400;
+  }
+  
+  .suporte img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+  #icon-telefone{
+    width: 40px;
+    transform: translate(5px, 10px);
+  }
+  /* Responsivo */
+  @media (max-width: 900px) {
+    .suporte {
+      flex-direction: column;
+      text-align: center;
+    }
+    #icon-telefone{
+      display: none;
+    }
+    .suporte img {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 400px;
+    }
+  
+    .suporte-texto {
+      max-width: 100%;
+    }
+  }
+  
