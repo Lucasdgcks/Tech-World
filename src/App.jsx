@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <div className="main-content">
         <Routes>
-          <Route path="/Tech-World/" element={
+          <Route path="/" element={
             <>
               <Banner />
               <Ofertas />
@@ -25,7 +25,7 @@ function App() {
               <Footer />
             </>
           } />
-          <Route path="/Tech-World/smartphone" element={<Smartphone />} />
+          <Route path="/smartphone" element={<Smartphone />} />
         </Routes>
       </div>
     </>
