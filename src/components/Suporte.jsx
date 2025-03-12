@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import "../styles/Suporte.css";
+import telefoneGif from "../assets/telefone.gif"; // Importe a imagem corretamente
+import suporteImage from "../assets/suporte.png"; // Importe a imagem corretamente
 
 const Suporte = () => {
   return (
@@ -11,7 +13,10 @@ const Suporte = () => {
         whileInView={{ opacity: 1, x: 0 }} 
         transition={{ duration: 1, ease: "easeOut" }} 
       >
-        <h2>Suporte de Qualidade para Você <img id="icon-telefone" src="src/assets/telefone.gif" alt="" /></h2>
+        <h2>
+          Suporte de Qualidade para Você
+          <img id="icon-telefone" src={telefoneGif} alt="Telefone" />
+        </h2>
         <p>
           Nosso compromisso vai além da venda. Oferecemos um suporte técnico especializado para garantir que você tenha a melhor experiência com nossos produtos.  
         </p>
@@ -24,10 +29,9 @@ const Suporte = () => {
         <p className="destaque">💡 Sua satisfação é a nossa prioridade! 💡</p>
       </motion.div>
       
-      <img src="src/assets/suporte.png" alt="Suporte ao Cliente" />
+      <img src={suporteImage} alt="Suporte ao Cliente" />
     </section>
   );
 };
 
 export default Suporte;
-

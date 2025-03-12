@@ -1,10 +1,11 @@
 import "../styles/Banner.css";
+import videoWorld from "../assets/videoWorld.mp4"; // Importando o vídeo
 
 const Banner = () => {
   return (
     <section className="banner">
       <video className="banner-video" autoPlay loop muted>
-        <source src="/src/assets/videoWorld.mp4" type="video/mp4" />
+        <source src={videoWorld} type="video/mp4" /> {/* Usando o vídeo importado */}
         Seu navegador não suporta o vídeo.
       </video>
       <div className="banner-content">

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom"; // Importa Link para navegação
 import "../styles/Navbar.css";
+import basketIcon from "../assets/cesta.png"; // Importando o ícone da cesta de compras
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -29,7 +30,7 @@ const Navbar = () => {
 
         <li><a href="#">Sobre</a></li>
         <li><a href="#">Contato</a></li>
-        <li><a href="#"><img id="icon-cesta" src="src/assets/cesta.png" alt="" /></a></li>
+        <li><a href="#"><img id="icon-cesta" src={basketIcon} alt="Cesta de compras" /></a></li>
       </ul>
     </nav>
   );
