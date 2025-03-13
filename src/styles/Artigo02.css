@@ -2,13 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Garante que ocupe a largura toda */
-    max-width: 1200px; /* Define um limite para evitar que fique muito grande */
-    margin: 0 auto; /* Centraliza o conteúdo */
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
     padding: 40px;
     box-sizing: border-box;
-    background-color: #f9f9f9; /* Fundo leve para destacar o conteúdo */
-    gap: 40px; /* Espaçamento entre o texto e a imagem */
+    background-color: #f9f9f9; 
+    gap: 40px; /
   }
   #icon-foguete{
     width: 50px;
@@ -37,17 +37,18 @@
   }
   
   .artigo img {
-    width: 500px; /* Largura fixa */
+    width: 500px;
     height: auto;
     border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.301);
   }
   
-  /* Responsivo para telas menores */
+  
   @media (max-width: 900px) {
     .artigo {
       flex-direction: column;
       text-align: center;
-      max-width: 100%; /* Garante que não passe da tela */
+      max-width: 100%; 
       overflow: hidden;
     }
   

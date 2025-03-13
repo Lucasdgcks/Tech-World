@@ -38,12 +38,13 @@
     width: 500px;
     height: auto;
     border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.301);
   }
   #icon-telefone{
     width: 40px;
     transform: translate(5px, 10px);
   }
-  /* Responsivo */
+  
   @media (max-width: 900px) {
     .suporte {
       flex-direction: column;

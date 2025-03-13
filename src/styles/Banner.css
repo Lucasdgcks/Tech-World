@@ -1,18 +1,16 @@
-/* Banner com vídeo de fundo */
 .banner {
     margin-top: 40px;
     width: 100%;
-    height: 100vh; /* Ocupa toda a altura da tela */
+    height: 100vh; 
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
-    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+    overflow: hidden; 
 }
 
-/* Vídeo de fundo */
 .banner-video {
     position: absolute;
     top: 50%;
@@ -20,21 +18,19 @@
     width: 100%;
     height: 100%;
     transform: translate(-50%, -50%);
-    object-fit: cover; /* Faz o vídeo preencher a tela corretamente */
-    z-index: -1; /* Mantém o vídeo no fundo */
+    object-fit: cover; 
+    z-index: -1; 
 }
 
-/* Conteúdo do banner */
 .banner-content {
     max-width: 800px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7); /* Fundo escuro para melhorar legibilidade */
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Título */
 .banner h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -44,14 +40,12 @@
     animation: slideInFromLeft 1s ease-out;
 }
 
-/* Texto */
 .banner p {
     font-size: 1.5rem;
     margin-bottom: 30px;
     animation: slideInFromRight 1.2s ease-out;
 }
 
-/* Botão de chamada para ação */
 .cta-button {
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -69,7 +63,6 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsividade */
 @media (max-width: 1024px) {
     .banner h1 {
         font-size: 2.5rem;
@@ -95,7 +88,7 @@
 
     .banner-content {
         max-width: 90%;
-        background: rgba(0, 0, 0, 0.8); /* Mais escuro para melhor contraste */
+        background: rgba(0, 0, 0, 0.8);
         padding: 15px;
         transform: translate(0, 150px);
     }
