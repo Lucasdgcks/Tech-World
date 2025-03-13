@@ -31,3 +31,9 @@ Bem-vindo ao **Tech World**, um projeto desenvolvido com **React + Vite** para c
 ## 🌐 Acesse o Site
 
 Visite o projeto no seguinte link: [Executar site](https://lucasdgcks.github.io/Tech-World/)
+
+## 🖼️ Créditos
+
+- **Imagens**: As imagens utilizadas foram criadas com o **Microsoft Copilot (IA)**.
+- **Vídeo**: O vídeo presente na seção de banner foi fornecido por [Pexels](https://www.pexels.com/).
+
