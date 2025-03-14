@@ -1,12 +1,10 @@
 import { useState } from "react";
 import "../styles/Ofertas.css";
-import smartphoneTS1 from "../assets/smarthphonex1.png"; // Importando as imagens
+import smartphoneTS1 from "../assets/smarthphonex1.png"; 
 import headphoneTH7 from "../assets/fonegamerTH7.png";
 import smartwatchTW5 from "../assets/smartwatchTW5.png";
 import notebookTNFast from "../assets/notebookTNFast.png";
 import notebookGamerTNUltra from "../assets/notebookGamerTNUltra.png";
-
-// Aqui você pode continuar importando o restante das imagens se necessário
 
 const Ofertas = () => {
   const produtos = [
@@ -25,7 +23,7 @@ const Ofertas = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    if (currentIndex < produtos.length - 4) { // Corrigido para evitar erro
+    if (currentIndex < produtos.length - 4) {
       setCurrentIndex(currentIndex + 1);
     }
   };

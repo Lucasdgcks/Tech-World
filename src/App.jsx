@@ -1,3 +1,4 @@
+// src/App.jsx
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
@@ -8,6 +9,7 @@ import Artigo02 from "./components/Artigo02";
 import Suporte from "./components/Suporte";
 import Footer from "./components/Footer";
 import Smartphone from "./Pages/Smartphone";
+import Notebooks from "./Pages/Notebooks";  // Import the Notebooks page
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
             </>
           } />
           <Route path="/smartphone" element={<Smartphone />} />
+          <Route path="/notebooks" element={<Notebooks />} /> 
         </Routes>
       </div>
     </>

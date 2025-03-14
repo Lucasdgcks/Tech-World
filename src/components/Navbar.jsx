@@ -21,7 +21,7 @@ const Navbar = () => {
           {dropdownOpen && (
             <ul className="dropdown-menu">
               <li><Link to="/smartphone">Smartphone</Link></li>
-              <li><a href="#">Notebooks</a></li>
+              <li><Link to="/notebooks">Notebooks</Link></li>
               <li><a href="#">Smartwatch</a></li>
               <li><a href="#">Acessórios</a></li>
             </ul>
