@@ -7,10 +7,11 @@ import Ofertas from "./components/Ofertas";
 import Artigo01 from "./components/Artigo01";
 import Artigo02 from "./components/Artigo02";
 import Suporte from "./components/Suporte";
+import Fetch from "./components/Fetch";
 import Footer from "./components/Footer";
 import Smartphone from "./Pages/Smartphone";
 import Notebooks from "./Pages/Notebooks";  // Import the Notebooks page
-import Fetch from "./components/Fetch";
+
 
 function App() {
   return (
