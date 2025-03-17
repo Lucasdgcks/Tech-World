@@ -10,6 +10,7 @@ import Suporte from "./components/Suporte";
 import Footer from "./components/Footer";
 import Smartphone from "./Pages/Smartphone";
 import Notebooks from "./Pages/Notebooks";  // Import the Notebooks page
+import Fetch from "./components/Fetch";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               <Artigo01 />
               <Artigo02 />
               <Suporte />
+              <Fetch />
               <Footer />
             </>
           } />
